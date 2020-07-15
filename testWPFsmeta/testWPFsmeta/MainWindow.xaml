@@ -53,9 +53,18 @@
         <Button Grid.Column="6" Grid.ColumnSpan="1" Grid.Row="1">Добавить категорию</Button>
 
 
-        <TreeView Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="6">
+        <TreeView x:Name="dgTree" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="6">
             <TreeViewItem  Header="Главная комната">
                 <DataGrid x:Name="dgSmeta" Grid.ColumnSpan="1" Grid.RowSpan="1" Width="300" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Path = Name}" Width="auto" Header="Имя"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path = Count}" Width="auto" Header="Количество"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path = Cost }" Width="*" Header="Итог"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TreeViewItem>
+            <TreeViewItem  Header="Тубзик">
+                <DataGrid x:Name="dgSmet" Grid.ColumnSpan="1" Grid.RowSpan="1" Width="300" AutoGenerateColumns="False">
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Path = Name}" Width="auto" Header="Имя"></DataGridTextColumn>
                         <DataGridTextColumn Binding="{Binding Path = Count}" Width="auto" Header="Количество"></DataGridTextColumn>
