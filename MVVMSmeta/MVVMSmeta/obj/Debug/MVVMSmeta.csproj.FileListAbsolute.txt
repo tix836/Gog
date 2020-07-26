@@ -1,0 +1,17 @@
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\bin\Debug\MVVMSmeta.exe.config
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\bin\Debug\MVVMSmeta.exe
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\bin\Debug\MVVMSmeta.pdb
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta.csprojAssemblyReference.cache
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\View\MainWindow.g.cs
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\App.g.cs
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta_MarkupCompile.cache
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta_MarkupCompile.lref
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\View\MainWindow.baml
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta.g.resources
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta.Properties.Resources.resources
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta.csproj.GenerateResource.cache
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta.csproj.CoreCompileInputs.cache
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta.exe
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\MVVMSmeta.pdb
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Documents\Gog\MVVMSmeta\MVVMSmeta\obj\Debug\App.baml

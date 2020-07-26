@@ -1,0 +1,54 @@
+﻿<Window x:Class="MVVMSmeta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:m ="clr-namespace:MVVMSmeta.Model"
+        xmlns:vm="clr-namespace:MVVMSmeta.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <vm:MainWindowViewModel x:Key="viewModel"/>
+        <!--Не закончено, нужно для добавления категории,сначала нужно сделать модель-->
+        <DataTemplate x:Key="TreeViewSmetaItemTemplate">
+            <TreeViewItem Header="{Binding CategoryTitle}">
+                <DataGrid>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Path = Smeta.Name}" Width="1*" Header="Имя"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path = Smeta.Amount}" Width="1*" Header="Количество"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path = Smeta.Price }" Width="1*" Header="Итог"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TreeViewItem>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource viewModel}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="2">Введите название категории</TextBlock>
+        <TextBox Name="CategoryTitle" Text="{Binding CategoryTitle,UpdateSourceTrigger=PropertyChanged}" FontSize="20" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" Width="auto"></TextBox>
+        <Button Content="Добавить категорию" FontSize="20" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Command="{Binding CommandAddNewTreeViewItem, Mode=OneWay, Source={StaticResource viewModel}}"></Button>
+        <TreeView x:Name ="dgTree" Grid.Row="4" Grid.RowSpan="5" Grid.ColumnSpan="6">
+            <TreeView.Resources>
+                
+            </TreeView.Resources>
+        </TreeView>
+    </Grid>
+</Window>
