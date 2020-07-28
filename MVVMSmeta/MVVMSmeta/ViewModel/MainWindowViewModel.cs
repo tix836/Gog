@@ -23,7 +23,7 @@ namespace MVVMSmeta.ViewModel
             {
                 return _smeta;
             }
-            set
+            private set
             {
                 _smeta = value;
             }
@@ -70,46 +70,7 @@ namespace MVVMSmeta.ViewModel
         
         public void AddNewTreeViewItem()
         {
-
-            //TreeViewItem item = new TreeViewItem();
-            //item.Header = CategoryTitle;
-            //item.Name = "item_name";
-            ////dgTree.Items.Add(item);
-
-            //// создание датагрида
-            //var nameBinding = new Binding("Name")
-            //{
-            //    Mode = BindingMode.Default,
-            //    UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
-            //};
-            //var amountBinding = new Binding("Amount")
-            //{
-            //    Mode = BindingMode.Default,
-            //    UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
-            //};
-            //var priceBinding = new Binding("Price")
-            //{
-            //    Mode = BindingMode.Default,
-            //    UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
-            //};
-            //var dataGrid = new DataGrid();
-            //dataGrid.AutoGenerateColumns = false;
-            //dataGrid.Columns.Add(new DataGridTextColumn
-            //{
-            //    Header = "Имя",
-            //    Binding = nameBinding
-            //});
-            //dataGrid.Columns.Add(new DataGridTextColumn
-            //{
-            //    Header = "Количество",
-            //    Binding = amountBinding
-            //});
-            //dataGrid.Columns.Add(new DataGridTextColumn
-            //{
-            //    Header = "Цена",
-            //    Binding = priceBinding
-            //});
-
+            Smeta.AddNewCategory(CategoryTitle);
         }
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
